@@ -1,0 +1,6 @@
+{
+  "name": "LiteRT AI",
+  "description": "Application Android d'IA locale (On-Device) utilisant Google AI Edge LiteRT-LM avec téléchargement de modèle Hugging Face et inférence hors-ligne en streaming.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
