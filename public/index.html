@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiteRT AI - Téléchargement de l'Application Android (APK)</title>
+    <style>
+        :root {
+            --primary: #0284c7;
+            --primary-hover: #0369a1;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --border: #334155;
+            --success: #10b981;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 16px;
+        }
+        .container {
+            max-width: 520px;
+            width: 100%;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 28px 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            text-align: center;
+        }
+        .icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, #0284c7, #38bdf8);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            box-shadow: 0 4px 15px rgba(2, 132, 199, 0.4);
+        }
+        .icon svg {
+            width: 36px;
+            height: 36px;
+            fill: white;
+        }
+        h1 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: #ffffff;
+        }
+        .badge {
+            display: inline-block;
+            background-color: rgba(16, 185, 129, 0.15);
+            color: var(--success);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            border-radius: 20px;
+            padding: 4px 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        p.subtitle {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.5;
+            margin-bottom: 24px;
+        }
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 14px 20px;
+            border-radius: 12px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border: none;
+            margin-bottom: 12px;
+        }
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            box-shadow: 0 4px 12px rgba(2, 132, 199, 0.35);
+        }
+        .btn-primary:hover, .btn-primary:active {
+            background-color: var(--primary-hover);
+            transform: translateY(-1px);
+        }
+        .btn-secondary {
+            background-color: rgba(255, 255, 255, 0.06);
+            color: #e2e8f0;
+            border: 1px solid var(--border);
+        }
+        .btn-secondary:hover, .btn-secondary:active {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .file-info {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: -6px;
+            margin-bottom: 14px;
+        }
+        .steps {
+            text-align: left;
+            background: rgba(0, 0, 0, 0.25);
+            border-radius: 12px;
+            padding: 16px;
+            margin-top: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .steps h3 {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .steps ol {
+            padding-left: 20px;
+            font-size: 13px;
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+        .steps li {
+            margin-bottom: 4px;
+        }
+        footer {
+            margin-top: 18px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">
+            <svg viewBox="0 0 24 24">
+                <path d="M17.6 9.48l1.84-3.18a.5.5 0 0 0-.86-.5l-1.87 3.24a10.95 10.95 0 0 0-4.71-1.04c-1.68 0-3.28.37-4.71 1.04L5.42 5.8a.5.5 0 0 0-.86.5l1.84 3.18C3.89 10.99 2.2 13.31 2 16.14h20c-.2-2.83-1.89-5.15-4.4-6.66zM7 13.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm10 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+            </svg>
+        </div>
+
+        <h1>LiteRT AI - Installation Android</h1>
+        <div class="badge">100% Hors-Ligne • Compatible Android 8.0+</div>
+        <p class="subtitle">
+            Téléchargez l'application complète On-Device exécutant Google AI Edge LiteRT-LM sans aucun appel réseau.
+        </p>
+
+        <!-- Bouton de téléchargement principal APK -->
+        <a href="app-debug.apk" download="app-debug.apk" class="btn btn-primary" id="downloadApkBtn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/>
+            </svg>
+            Télécharger l'APK directement (.apk)
+        </a>
+        <div class="file-info">Fichier app-debug.apk (~90 Mo) • Prêt à installer</div>
+
+        <!-- Bouton archive complète ZIP avec tout le code source et l'APK -->
+        <a href="LiteRT_AI_Projet_Complet_Avec_APK.zip" download="LiteRT_AI_Projet_Complet_Avec_APK.zip" class="btn btn-secondary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+            </svg>
+            Télécharger le Projet Complet ZIP (Code + APK)
+        </a>
+        <div class="file-info">Archive .zip (~60 Mo) • Contient l'APK + Tout le code source</div>
+
+        <!-- Bouton archive APK seule -->
+        <a href="app-debug.zip" download="app-debug.zip" class="btn btn-secondary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6 10H6v-2h8v2zm4-4H6v-2h12v2z"/>
+            </svg>
+            Télécharger app-debug.zip
+        </a>
+
+        <div class="steps">
+            <h3>📱 Guide d'installation sur votre smartphone :</h3>
+            <ol>
+                <li>Appuyez sur <strong>Télécharger l'APK directement</strong> ci-dessus.</li>
+                <li>Une fois le téléchargement terminé, ouvrez le fichier depuis vos notifications ou votre dossier <em>Téléchargements</em>.</li>
+                <li>Si Android vous demande d'autoriser l'installation d'applications inconnues pour votre navigateur, acceptez.</li>
+                <li>Appuyez sur <strong>Installer</strong>, puis lancez <strong>LiteRT AI</strong> !</li>
+            </ol>
+        </div>
+
+        <footer>
+            Application compilée avec succès • Google AI Edge LiteRT-LM
+        </footer>
+    </div>
+</body>
+</html>

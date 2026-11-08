@@ -1,0 +1,21 @@
+TÉLÉCHARGEMENT DE L'APPLICATION (APK)
+=====================================
+
+Le fichier complet de l'application est bien présent ici avec tous ses poids et bibliothèques (152 Mo) :
+
+1. FICHIER DIRECT .APK :
+   - app-debug.apk (152 Mo)
+   Si votre explorateur Web masque les fichiers qui se terminent par .apk, utilisez l'un des formats ci-dessous :
+
+2. FICHIER ARCHIVE ZIP (Visible dans l'explorateur Web) :
+   - app-debug.zip (152 Mo)
+   - telecharger_ici_app-debug.zip (152 Mo)
+   Faites un clic droit ou appuyez dessus pour le télécharger. Une fois téléchargé sur votre téléphone, ouvrez-le simplement ou renommez l'extension en .apk pour l'installer.
+
+3. FICHIER .BIN :
+   - app-debug.apk.bin (152 Mo)
+   Renommez simplement en .apk après téléchargement.
+
+4. TÉLÉCHARGEMENT EN 1 CLIC DEPUIS L'INTERFACE :
+   Appuyez sur l'onglet "Artifacts" tout en bas de votre écran sur Google AI Studio.
+   Vous y trouverez app-debug.apk et app-debug.zip avec un bouton direct "Download".

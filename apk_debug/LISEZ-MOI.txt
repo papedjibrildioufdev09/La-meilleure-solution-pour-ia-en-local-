@@ -1,0 +1,15 @@
+DOSSIER APK_DEBUG - FICHIER D'INSTALLATION ANDROID
+===================================================
+
+Le fichier d'installation de l'application est bien présent ici :
+- Nom : app-debug.apk
+- Taille : ~90 Mo (contient le moteur On-Device LiteRT-LM complet)
+
+COMMENT TÉLÉCHARGER LE FICHIER SUR VOTRE TÉLÉPHONE :
+1. Dans AI Studio sur votre téléphone, appuyez sur l'onglet "Artifacts" tout en bas de l'écran.
+   Le fichier app-debug.apk y apparaît avec un bouton de téléchargement direct.
+2. Ou via l'explorateur de code : faites un clic long ou appuyez sur les 3 petits points à côté de ce dossier / fichier pour le télécharger.
+3. Le fichier est également disponible aux emplacements :
+   - /APK_debug/app-debug.apk
+   - /public/app-debug.apk
+   - /app-debug.apk (racine du projet)
